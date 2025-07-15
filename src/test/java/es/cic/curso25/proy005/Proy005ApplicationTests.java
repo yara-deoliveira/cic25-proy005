@@ -27,7 +27,7 @@ class Proy005ApplicationTests {
 	void testTelefonoDelete() throws Exception {
 	
 		mockMvc
-		.perform(delete("/telefono/4"))
+		.perform(delete("/telefono/4"))  // se puede añadir .content
 		.andDo(print())
 		.andExpect(status().isOk())
 		.andReturn();
